@@ -8,11 +8,18 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-.DS_Store
 dist
 dist-ssr
 coverage
 *.local
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de variáveis de ambiente (Segurança)
+.env
+*.log
 
 # Editor directories and files
 .vscode/*
