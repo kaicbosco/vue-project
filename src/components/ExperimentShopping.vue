@@ -24,6 +24,13 @@ const total = computed(() => {
   console.log('Calculando total...')
   return products.value.reduce((sum, p) => sum + (p.price * p.quantity), 0)
 })
+
+function incrementQuantity(id: number) {
+  const product = products.value.find(p => p.id === id)
+  if (product) {
+    product.quantity++
+  }
+}
 </script>
 
 <template>
@@ -41,6 +48,8 @@ const total = computed(() => {
     <p>{{ total }}</p>
     <p>{{ total }}</p>
     <p>{{ total }}</p>
+
+    <button @click="incrementQuantity(1)">Incrementar Produto</button>
   </div>
 </template>
 
