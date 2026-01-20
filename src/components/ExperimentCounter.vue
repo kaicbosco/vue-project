@@ -2,6 +2,11 @@
 // Versão 1: Variável comum
 let countNormal = 0
 
+// const count = ref(0)
+// console.log(count);  // Olhe no console do navegador
+// console.log(typeof count);
+// console.log(count.value);
+
 function incrementNormal() {
   countNormal++
   console.log('countNormal:', countNormal)  // Vai mudar no console?
@@ -15,6 +20,7 @@ function incrementReactive() {
   countReactive.value++
   console.log('countReactive:', countReactive.value)
 }
+
 </script>
 
 <template>
