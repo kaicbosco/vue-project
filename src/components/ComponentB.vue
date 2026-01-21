@@ -4,7 +4,7 @@
   <div class="box">Sou o Component B</div>
 </template>
 
-<style scoped>
+<style>
 .box {
   background-color: blue;
   padding: 20px;
