@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import UserProfile from '@/components/UserProfile.vue'
 </script>
 
 <template>
-  <h1>Hello World</h1>
+  <strong>App.vue</strong>
+  <UserProfile />
 </template>
 
 <style scoped></style>
